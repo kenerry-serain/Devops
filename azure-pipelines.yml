@@ -1,12 +1,40 @@
 pool:
-  vmImage: 'ubuntu-16.04'
-- script: dotnet restore
-- script: dotnet build
-- task: DotNetCoreCLI@2
-  inputs:
-    command: test
-    projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
-- task: PublishBuildArtifacts@1
-- script: docker build -t $(dockerId)/$(imageName) . 
-- script: docker build -t $(dockerId)/$(imageName) . 
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  buildConfiguration: 'Release'
+
+jobs:
+  - job: Restoring Packages
+  steps:
+  - script: dotnet restore
+    displayName: 'dotnet restore'
+
+  - job: Building Projects
+    steps:
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+
+  - job: Testing Projects
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet test $(buildConfiguration)'
+      inputs:
+        command: test
+        projects: '**/*Tests/*.csproj'
+        arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+
+  - job: Publishing Project
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet publish $(buildConfiguration)'
+      inputs:
+        command: publish
+        publishWebProjects: True
+        arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+        zipAfterPublish: True
+
+  - job: Publishing Artefact
+    steps:
+    - task: PublishBuildArtifacts@1
+      displayName: 'publish artifacts'
