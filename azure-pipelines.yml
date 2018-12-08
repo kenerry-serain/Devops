@@ -1,0 +1,12 @@
+pool:
+  vmImage: 'ubuntu-16.04'
+- script: dotnet restore
+- script: dotnet build
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+- task: PublishBuildArtifacts@1
+- script: docker build -t $(dockerId)/$(imageName) . 
+- script: docker build -t $(dockerId)/$(imageName) . 
