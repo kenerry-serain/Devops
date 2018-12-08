@@ -1,0 +1,15 @@
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.deps.json
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.runtimeconfig.json
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.runtimeconfig.dev.json
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.dll
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.pdb
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.csprojAssemblyReference.cache
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.csproj.CoreCompileInputs.cache
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.RazorAssemblyInfo.cache
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.RazorAssemblyInfo.cs
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.AssemblyInfoInputs.cache
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.AssemblyInfo.cs
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.RazorTargetAssemblyInfo.cache
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.dll
+/home/kenerry/workspace/Devops/Devops.API/obj/Debug/netcoreapp2.1/Devops.API.pdb
+/home/kenerry/workspace/Devops/Devops.API/bin/Debug/netcoreapp2.1/Devops.API.xml
