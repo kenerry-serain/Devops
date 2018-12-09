@@ -21,7 +21,7 @@ steps:
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
 - script: |
-    docker build -f Dockerfile -t $(dockerId)/$(imageName) .
+    docker build --no-cache -f Dockerfile -t $(dockerId)/$(imageName) .
     docker login -u $(dockerId) -p $(dockerPassword)
     docker push $(dockerId)/$(imageName)
   displayName: 'Pushing Image'
