@@ -12,56 +12,56 @@ namespace Devops.API.Controllers
         private static readonly IList<Product> ProductCollection = new List<Product>();
         
         
-        /// <summary>
-        /// Select all products
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(204)]
-        public IActionResult GetAll()
-        {
-            if (ProductCollection.Any())
-                return Ok(ProductCollection);
-            
-            return NoContent();
-        }
-        
-        /// <summary>
-        /// Select a single product
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("{id}", Name = "GetById")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(404)]
-        [ProducesResponseType(400)]
-        public IActionResult GetById([FromRoute]string id)
-        {
-            //Avoiding invalid id to call database
-            if (string.IsNullOrEmpty(id)) 
-                return BadRequest();            
-            
-            var product = ProductCollection.SingleOrDefault(pdt => pdt.Id == id);
-            if (product != null)
-                return Ok(product);
-
-            return NotFound();
-        }
-        
-        /// <summary>
-        /// Creates a single product
-        /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
-        [HttpPost]
-        [ProducesResponseType(201)]
-        public IActionResult Register([FromBody] Product product)
-        {
-            ProductCollection.Add(product);
-            return Created(nameof(GetById), product);
-        }
+//        /// <summary>
+//        /// Select all products
+//        /// </summary>
+//        /// <returns></returns>
+//        [HttpGet]
+//        [ProducesResponseType(200)]
+//        [ProducesResponseType(204)]
+//        public IActionResult GetAll()
+//        {
+//            if (ProductCollection.Any())
+//                return Ok(ProductCollection);
+//            
+//            return NoContent();
+//        }
+//        
+//        /// <summary>
+//        /// Select a single product
+//        /// </summary>
+//        /// <param name="id"></param>
+//        /// <returns></returns>
+//        [HttpGet]
+//        [Route("{id}", Name = "GetById")]
+//        [ProducesResponseType(200)]
+//        [ProducesResponseType(404)]
+//        [ProducesResponseType(400)]
+//        public IActionResult GetById([FromRoute]string id)
+//        {
+//            //Avoiding invalid id to call database
+//            if (string.IsNullOrEmpty(id)) 
+//                return BadRequest();            
+//            
+//            var product = ProductCollection.SingleOrDefault(pdt => pdt.Id == id);
+//            if (product != null)
+//                return Ok(product);
+//
+//            return NotFound();
+//        }
+//        
+//        /// <summary>
+//        /// Creates a single product
+//        /// </summary>
+//        /// <param name="product"></param>
+//        /// <returns></returns>
+//        [HttpPost]
+//        [ProducesResponseType(201)]
+//        public IActionResult Register([FromBody] Product product)
+//        {
+//            ProductCollection.Add(product);
+//            return Created(nameof(GetById), product);
+//        }
 
         /// <summary>
         /// Updates a single product
@@ -89,28 +89,28 @@ namespace Devops.API.Controllers
         }
         
                 
-        /// <summary>
-        /// Removes a single product
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        [HttpDelete]
-        [Route("{id}")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(404)]
-        public IActionResult Delete([FromRoute]string id)
-        {
-            //Avoiding invalid id to call database
-            if (string.IsNullOrEmpty(id)) 
-                return BadRequest();
-            
-            var product = ProductCollection.SingleOrDefault(pdt => pdt.Id == id);
-            if (product is null) 
-                return NotFound();
-            
-            ProductCollection.Remove(product);
-            return Ok();
-        }
+//        /// <summary>
+//        /// Removes a single product
+//        /// </summary>
+//        /// <param name="id"></param>
+//        /// <returns></returns>
+//        [HttpDelete]
+//        [Route("{id}")]
+//        [ProducesResponseType(200)]
+//        [ProducesResponseType(400)]
+//        [ProducesResponseType(404)]
+//        public IActionResult Delete([FromRoute]string id)
+//        {
+//            //Avoiding invalid id to call database
+//            if (string.IsNullOrEmpty(id)) 
+//                return BadRequest();
+//            
+//            var product = ProductCollection.SingleOrDefault(pdt => pdt.Id == id);
+//            if (product is null) 
+//                return NotFound();
+//            
+//            ProductCollection.Remove(product);
+//            return Ok();
+//        }
     }
 }
