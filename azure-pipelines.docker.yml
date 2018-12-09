@@ -3,7 +3,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  imageName: 'devops:$(Build.BuildId)'
+  imageName: 'devops:latest'
   # imageName: 'devops:$(Build.BuildId)'
 
 steps:
