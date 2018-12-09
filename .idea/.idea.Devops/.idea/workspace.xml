@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0df6fd89-5861-4e51-b9c7-3c881313c8fd" name="Default Changelist" comment="" />
+    <list default="true" id="0df6fd89-5861-4e51-b9c7-3c881313c8fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +35,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="10" />
-          <entry key="cs" value="41" />
+          <entry key="cs" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="41" />
+          <entry key="C#" value="43" />
           <entry key="Dockerfile" value="10" />
         </counts>
       </usages-collector>
@@ -50,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/Devops.API/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <marker date="1544287328633" expanded="false" signature="6:63" ph="..." />
                 <marker date="1544287328633" expanded="true" signature="85:464" ph="{...}" />
@@ -61,25 +63,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="2090">
+              <caret line="113" column="11" selection-start-line="29" selection-end-line="113" selection-end-column="11" />
               <folding>
-                <marker date="1544286725897" expanded="false" signature="6:109" ph="..." />
-                <marker date="1544286725897" expanded="true" signature="143:3587" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="251:3585" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="363:463" ph="/// Select all products ... " />
-                <marker date="1544286725897" expanded="true" signature="591:743" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="761:903" ph="/// Select a single product ... " />
-                <marker date="1544286725897" expanded="true" signature="1130:1489" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="1507:1655" ph="/// Creates a single product ... " />
-                <marker date="1544286725897" expanded="true" signature="1776:1894" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="1904:2090" ph="/// Updates a single product ... " />
-                <marker date="1544286725897" expanded="true" signature="2326:2790" ph="{...}" />
-                <marker date="1544286725897" expanded="true" signature="2825:2968" ph="/// Removes a single product ... " />
-                <marker date="1544286725897" expanded="true" signature="3179:3579" ph="{...}" />
+                <marker date="1544393209178" expanded="false" signature="6:109" ph="..." />
+                <marker date="1544393209178" expanded="true" signature="143:3766" ph="{...}" />
+                <marker date="1544393209178" expanded="true" signature="251:3764" ph="{...}" />
+                <marker date="1544393209178" expanded="true" signature="372:472" ph="/// Select all products ... " />
+                <marker date="1544393209178" expanded="true" signature="600:752" ph="{...}" />
+                <marker date="1544393209178" expanded="true" signature="762:3758" ph="/*        /// Select a single product ... */" />
               </folding>
             </state>
           </provider>
@@ -89,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/Devops.API/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding>
                 <marker date="1544289626917" expanded="true" signature="6:287" ph="..." />
                 <marker date="1544289626917" expanded="true" signature="309:1871" ph="{...}" />
@@ -106,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Devops.API/Models/Product.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <marker date="1544286725741" expanded="true" signature="42:308" ph="{...}" />
                 <marker date="1544286725741" expanded="true" signature="69:306" ph="{...}" />
@@ -139,11 +134,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" />
         <option value="$PROJECT_DIR$/Devops.API/Models/Product.cs" />
         <option value="$PROJECT_DIR$/Devops.API/Program.cs" />
         <option value="$PROJECT_DIR$/Devops.API/Dockerfile" />
         <option value="$PROJECT_DIR$/Devops.API/Startup.cs" />
+        <option value="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" />
       </list>
     </option>
   </component>
@@ -252,12 +247,12 @@
       <option name="presentableId" value="Default" />
       <updated>1544286498166</updated>
       <workItem from="1544286499839" duration="3428000" />
-      <workItem from="1544387268581" duration="1393000" />
+      <workItem from="1544387268581" duration="1796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4821000" />
+    <option name="totallyTimeSpent" value="5224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +317,7 @@
     <entry file="file://$PROJECT_DIR$/Devops.API/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
             <marker date="1544289626917" expanded="true" signature="6:287" ph="..." />
             <marker date="1544289626917" expanded="true" signature="309:1871" ph="{...}" />
@@ -341,7 +336,7 @@
     <entry file="file://$PROJECT_DIR$/Devops.API/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <marker date="1544287328633" expanded="false" signature="6:63" ph="..." />
             <marker date="1544287328633" expanded="true" signature="85:464" ph="{...}" />
@@ -351,36 +346,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <marker date="1544286725897" expanded="false" signature="6:109" ph="..." />
-            <marker date="1544286725897" expanded="true" signature="143:3587" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="251:3585" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="363:463" ph="/// Select all products ... " />
-            <marker date="1544286725897" expanded="true" signature="591:743" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="761:903" ph="/// Select a single product ... " />
-            <marker date="1544286725897" expanded="true" signature="1130:1489" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="1507:1655" ph="/// Creates a single product ... " />
-            <marker date="1544286725897" expanded="true" signature="1776:1894" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="1904:2090" ph="/// Updates a single product ... " />
-            <marker date="1544286725897" expanded="true" signature="2326:2790" ph="{...}" />
-            <marker date="1544286725897" expanded="true" signature="2825:2968" ph="/// Removes a single product ... " />
-            <marker date="1544286725897" expanded="true" signature="3179:3579" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Devops.API/Models/Product.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <marker date="1544286725741" expanded="true" signature="42:308" ph="{...}" />
             <marker date="1544286725741" expanded="true" signature="69:306" ph="{...}" />
             <marker date="1544286725741" expanded="true" signature="234:300" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="113" column="11" selection-start-line="29" selection-end-line="113" selection-end-column="11" />
+          <folding>
+            <marker date="1544393209178" expanded="false" signature="6:109" ph="..." />
+            <marker date="1544393209178" expanded="true" signature="143:3766" ph="{...}" />
+            <marker date="1544393209178" expanded="true" signature="251:3764" ph="{...}" />
+            <marker date="1544393209178" expanded="true" signature="372:472" ph="/// Select all products ... " />
+            <marker date="1544393209178" expanded="true" signature="600:752" ph="{...}" />
+            <marker date="1544393209178" expanded="true" signature="762:3758" ph="/*        /// Select a single product ... */" />
           </folding>
         </state>
       </provider>
