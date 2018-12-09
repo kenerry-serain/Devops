@@ -21,9 +21,9 @@ steps:
 
 - script: |
     docker build -f Dockerfile -t $(dockerId)/$(imageName) .
-    docker tag $(imageName):latest $(dockerId)/$(imageName)
+    docker tag $(dockerId)/$(imageName) $(dockerId)/$(imageName):latest
     docker login -u $(dockerId) -p $(dockerPassword)
-    docker push $(dockerId)/$(imageName)
+    docker push $(dockerId)/$(imageName):latest
   displayName: 'Pushing Image'
 
 # - task: DotNetCoreCLI@2
