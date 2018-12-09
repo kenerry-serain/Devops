@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0df6fd89-5861-4e51-b9c7-3c881313c8fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,15 +66,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="113" column="11" selection-start-line="29" selection-end-line="113" selection-end-column="11" />
+            <state relative-caret-position="461">
+              <caret line="29" selection-start-line="29" selection-end-line="113" selection-end-column="9" />
               <folding>
-                <marker date="1544393209178" expanded="false" signature="6:109" ph="..." />
-                <marker date="1544393209178" expanded="true" signature="143:3766" ph="{...}" />
-                <marker date="1544393209178" expanded="true" signature="251:3764" ph="{...}" />
-                <marker date="1544393209178" expanded="true" signature="372:472" ph="/// Select all products ... " />
-                <marker date="1544393209178" expanded="true" signature="600:752" ph="{...}" />
-                <marker date="1544393209178" expanded="true" signature="762:3758" ph="/*        /// Select a single product ... */" />
+                <marker date="1544395399848" expanded="false" signature="6:109" ph="..." />
+                <marker date="1544395399848" expanded="true" signature="143:3596" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="251:3594" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="372:472" ph="/// Select all products ... " />
+                <marker date="1544395399848" expanded="true" signature="600:752" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="770:912" ph="/// Select a single product ... " />
+                <marker date="1544395399848" expanded="true" signature="1139:1498" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="1516:1664" ph="/// Creates a single product ... " />
+                <marker date="1544395399848" expanded="true" signature="1785:1903" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="1913:2099" ph="/// Updates a single product ... " />
+                <marker date="1544395399848" expanded="true" signature="2335:2799" ph="{...}" />
+                <marker date="1544395399848" expanded="true" signature="2834:2977" ph="/// Removes a single product ... " />
+                <marker date="1544395399848" expanded="true" signature="3188:3588" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -247,12 +254,12 @@
       <option name="presentableId" value="Default" />
       <updated>1544286498166</updated>
       <workItem from="1544286499839" duration="3428000" />
-      <workItem from="1544387268581" duration="2941000" />
+      <workItem from="1544387268581" duration="3781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6369000" />
+    <option name="totallyTimeSpent" value="7209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,15 +367,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Devops.API/Controllers/ProductController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="113" column="11" selection-start-line="29" selection-end-line="113" selection-end-column="11" />
+        <state relative-caret-position="461">
+          <caret line="29" selection-start-line="29" selection-end-line="113" selection-end-column="9" />
           <folding>
-            <marker date="1544393209178" expanded="false" signature="6:109" ph="..." />
-            <marker date="1544393209178" expanded="true" signature="143:3766" ph="{...}" />
-            <marker date="1544393209178" expanded="true" signature="251:3764" ph="{...}" />
-            <marker date="1544393209178" expanded="true" signature="372:472" ph="/// Select all products ... " />
-            <marker date="1544393209178" expanded="true" signature="600:752" ph="{...}" />
-            <marker date="1544393209178" expanded="true" signature="762:3758" ph="/*        /// Select a single product ... */" />
+            <marker date="1544395399848" expanded="false" signature="6:109" ph="..." />
+            <marker date="1544395399848" expanded="true" signature="143:3596" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="251:3594" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="372:472" ph="/// Select all products ... " />
+            <marker date="1544395399848" expanded="true" signature="600:752" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="770:912" ph="/// Select a single product ... " />
+            <marker date="1544395399848" expanded="true" signature="1139:1498" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="1516:1664" ph="/// Creates a single product ... " />
+            <marker date="1544395399848" expanded="true" signature="1785:1903" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="1913:2099" ph="/// Updates a single product ... " />
+            <marker date="1544395399848" expanded="true" signature="2335:2799" ph="{...}" />
+            <marker date="1544395399848" expanded="true" signature="2834:2977" ph="/// Removes a single product ... " />
+            <marker date="1544395399848" expanded="true" signature="3188:3588" ph="{...}" />
           </folding>
         </state>
       </provider>

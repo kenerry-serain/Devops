@@ -8,13 +8,13 @@ variables:
 
 steps:
 - script: dotnet restore
-  displayName: 'dotnet restore'
+  displayName: 'Restoring Packages'
 
 - script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+  displayName: 'Building Project'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet test $(buildConfiguration)'
+  displayName: 'Testing'
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
