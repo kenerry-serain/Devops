@@ -3,7 +3,8 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  imageName: 'devops:$(Build.BuildId)'
+  imageName: 'devops'
+  # imageName: 'devops:$(Build.BuildId)'
 
 steps:
 - script: dotnet restore
@@ -21,9 +22,8 @@ steps:
 
 - script: |
     docker build -f Dockerfile -t $(dockerId)/$(imageName) .
-    docker tag $(dockerId)/$(imageName) $(dockerId)/$(imageName):latest
     docker login -u $(dockerId) -p $(dockerPassword)
-    docker push $(dockerId)/$(imageName):latest
+    docker push $(dockerId)/$(imageName)
   displayName: 'Pushing Image'
 
 # - task: DotNetCoreCLI@2
