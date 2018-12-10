@@ -4,7 +4,6 @@ pool:
 variables:
   buildConfiguration: 'Release'
   imageName: 'devops:latest'
-  # imageName: 'devops:$(Build.BuildId)'
 
 steps:
 - script: dotnet restore
@@ -20,19 +19,11 @@ steps:
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
+- script: docker build --no-cache -f Dockerfile -t $(dockerId)/$(imageName) .
+  displayName: 'Building Docker Image'
+
 - script: |
-    docker build --no-cache -f Dockerfile -t $(dockerId)/$(imageName) .
     docker login -u $(dockerId) -p $(dockerPassword)
     docker push $(dockerId)/$(imageName)
-  displayName: 'Pushing Image'
+  displayName: 'Sending Image to Docker Hub'
 
-# - task: DotNetCoreCLI@2
-#   displayName: 'dotnet publish $(buildConfiguration)'
-#   inputs:
-#     command: publish
-#     publishWebProjects: True
-#     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-#     zipAfterPublish: True
-
-# - task: PublishBuildArtifacts@1
-#   displayName: 'publish artifacts'
